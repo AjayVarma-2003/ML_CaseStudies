@@ -1,3 +1,13 @@
+This project demonstrates an end to end machine learning pipeline for predicting Diabetes
+using diabetes.csv
+
+It follows industrial best pracitices by :
+    1. Automating preprocessing with pipelines
+    2. Handling missing or garbage values if any.
+    3. Using Logistic regression classifier as robust baseline.
+    4. Saving and loading trained model using joblib.
+    5. Providing data visualization.
+
 Dependencies :-
     Install the required python packages before running the project:
         pip install pandas, numpy, matplotlib, scikit-learn, joblib
@@ -36,6 +46,22 @@ Workflow :-
 Running the project :-
     1. Prepare CSV and load CSV
     2. Train and Evaluate Model
+        Training accuracy of model is :  77.0358306188925
+        Testing accuracy of model is :  75.32467532467533
+        Classification report of model is : 
+                      precision    recall  f1-score   support
+        
+                   0       0.81      0.80      0.81        99
+                   1       0.65      0.67      0.66        55
+        
+            accuracy                           0.75       154
+           macro avg       0.73      0.74      0.73       154
+        weighted avg       0.76      0.75      0.75       154
+        
+        Confusion matrix of model is : 
+        [[79 20]
+         [18 37]]
+
     3. Visualization :-
         1> Confusion matrix with Matplotlib
     4. Model Storage :-
